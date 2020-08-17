@@ -6,7 +6,7 @@ function Projects() {
     const projectsList = projects.list;
 
     return (
-        <section id="projects" className="section">
+        <section id="projects" className="section mt-5 pt-5">
             <div className="projects container">
             <div className="row">
                 <div className="col-12 d-flex align-items-center just-content-center">

@@ -6,7 +6,7 @@ function Services() {
     const servicesList = services.list;
 
     return (
-        <section id="services" className="section">
+        <section id="services" className="section mt-5 pt-5">
             <div className="services container">
             <div className="row">
                 <div className="col-12 d-flex align-items-center just-content-center">

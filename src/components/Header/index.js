@@ -2,9 +2,12 @@ import React from 'react';
 import { normalizeImgPath } from "../../utils/imgPath";
 import MainMenu from '../Menu';
 
-function Header() {
+function Header(props) {
+  
+  
+
   return (
-    <header id="header" className="fixed-top">
+    <header id="header" className={ `fixed-top ${ props.isActive }` }>
         <div className="container">
           <div className="row">
             <div className="col-lg-4 col-md-6 col-6 d-flex align-items-center">
