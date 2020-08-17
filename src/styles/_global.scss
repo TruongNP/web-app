@@ -1,0 +1,28 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  a, button {
+    box-shadow: none !important;
+    outline: none !important;
+    text-decoration-line: none !important;
+  }
+
+  a, button {
+    &.btn-hover {
+      transition: 0.3s ease-in-out;
+  
+      &:hover {
+        background: $danger-color !important;
+        color: $white-color !important;
+      }
+    }
+  }

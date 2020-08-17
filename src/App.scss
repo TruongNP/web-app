@@ -1,0 +1,10 @@
+// general
+@import "./styles/color";
+@import "./styles/global";
+
+//header, footer
+@import "./styles/public/header";
+@import "./styles/public/footer";
+
+//pages
+@import "./styles/pages/home";
