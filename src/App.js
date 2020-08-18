@@ -10,39 +10,10 @@ import './App.scss';
 
 class App extends Component {
 
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      isActive: ""
-    }
-
-    this.handleScroll = this.handleScroll.bind(this);
-}
-
-componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
-}
-
-componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-}
-
-handleScroll = e => {
-    const position = window.pageYOffset;
-        const header = document.getElementById("header");
-        const posHeader = header.offsetTop;
-
-        const scroll = position > posHeader ? 'scroll-active' : '';
-        this.setState({
-            isActive: scroll
-        });
-};
-
   render() {
     return (
       <Layout>
-        <Header isActive={this.state.isActive }/>
+        <Header/>
         <Home/>
         <Services/>
         <Projects/>

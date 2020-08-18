@@ -48,7 +48,14 @@
         .service-content {
             .service-list {
                 display: grid;
-                grid-template-columns: repeat(4, 1fr);
+                grid-template-columns: repeat(1, 1fr);
+                grid-row-gap: 30px;
+                @include media-breakpoint-up(md) { 
+                    grid-template-columns: repeat(2, 1fr);
+                 }
+                @include media-breakpoint-up(lg) { 
+                    grid-template-columns: repeat(4, 1fr);
+                 }
                 grid-column-gap: 30px;
 
                 .service-item {
@@ -174,7 +181,11 @@
         }
 
         .about-content {
-            padding-right: 185px;
+            padding-right: 0;
+
+            @include media-breakpoint-up(lg) { 
+                padding-right: 185px;
+            }
         }
     }
 }
@@ -192,6 +203,15 @@
             .contact-info {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
+                grid-row-gap: 30px;
+                @include media-breakpoint-up(md) { 
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
+                @include media-breakpoint-up(lg) { 
+                    grid-template-columns: repeat(3, 1fr);
+                }
+
                 grid-column-gap: 30px;
                 
                 .contact-item {
