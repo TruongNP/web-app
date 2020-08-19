@@ -1,5 +1,5 @@
 import React from 'react';
-import { normalizeImgPath } from "../../../utils/imgPath";
+import { normalizeImgPath } from "../../../../utils/imgPath";
 
 
 function Home() {
@@ -9,7 +9,7 @@ function Home() {
   return (
     <section id="home" className="section" style={ homeStyle }>
         <div className="home container">
-          <div className="row">
+          <div className="row  m-0">
             <div className="col-12 d-flex align-items-center">
                 <div className="home-content">
                     <h1 className="m-0 ml-1 text-white">Hello!</h1> 

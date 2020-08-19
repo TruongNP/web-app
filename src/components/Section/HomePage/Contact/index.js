@@ -1,5 +1,5 @@
 import React from 'react';
-import { normalizeImgPath } from "../../../utils/imgPath";
+import { normalizeImgPath } from "../../../../utils/imgPath";
 
 
 function Contact() {
@@ -7,7 +7,7 @@ function Contact() {
     return (
         <section id="contact" className="section">
             <div className="contact container">
-            <div className="row">
+            <div className="row  m-0">
                 <div className="col-12 d-flex align-items-center justify-content-end">
                     <div className="contact-content">
                         <h1 className="mb-4 text-dark text-uppercase text-center font-weight-normal">Contact <span className="text-danger">Info</span></h1>

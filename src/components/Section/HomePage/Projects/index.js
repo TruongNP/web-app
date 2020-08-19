@@ -1,5 +1,5 @@
 import React from 'react';
-import { projects } from "../../../static/data/projects";
+import { projects } from "../../../../static/data/projects";
 
 
 function Projects() {
@@ -8,7 +8,7 @@ function Projects() {
     return (
         <section id="projects" className="section mt-5 pt-5">
             <div className="projects container">
-            <div className="row">
+            <div className="row  m-0">
                 <div className="col-12 d-flex align-items-center just-content-center">
                     <div className="project-content">
                         <h1 className="text-dark text-uppercase text-center font-weight-normal">Recent <span className="text-danger">{ projects.title }</span></h1>

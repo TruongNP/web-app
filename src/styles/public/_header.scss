@@ -45,4 +45,60 @@
             }
         }
     }
+
+    #right-home-menu {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        right: 0;
+        height: 100vh;
+        top: 0;
+        width: fit-content;
+        transform: translateX(calc(100% - 22px));
+        transition: 0.3s ease-in-out;
+        
+        #btn-close-right-home-menu {
+            transform: translateX(0);
+            transition: 0.3s ease-in-out;
+        }
+
+        &:hover {
+            transform: translateX(0);
+
+            #btn-close-right-home-menu {
+                transform: translateX(22px);
+            }
+        }
+
+        .navbar-nav {
+            position: relative;
+            background: #fff;
+            padding: 15px 5px;
+            width: 100%;
+            height: fit-content;
+            .nav-item {
+                width: 100%;
+                margin: 15px 0;
+                a {
+                    transition: 0.3s ease-in-out;
+                    color: $danger-color;
+                    font-size: 14px;
+                    border-radius: 15px;
+                    line-height: 1;
+                    padding: 5px 10px;
+                    
+                    &:not(.active) {
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+
+                    &.active {
+                        color: $white-color;
+                        background: $danger-color;
+                    }
+                }
+            }
+        }
+    }
 }

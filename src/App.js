@@ -1,26 +1,27 @@
 import React, {Component} from 'react';
-import Layout from './components/Layout';
-import Header from './components/Header';
-import Home from './components/Section/Home';
-import Services from './components/Section/Services';
-import Projects from './components/Section/Projects';
-import About from './components/Section/About';
-import Contact from './components/Section/Contact';
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import HomePage from './components/Pages/HomePage';
+import BlogsPage from './components/Pages/BlogsPage';
+import CareersPage from './components/Pages/CareersPage';
 import './App.scss';
 
 class App extends Component {
-
+  
   render() {
     return (
-      <Layout>
-        <Header/>
-        <Home/>
-        <Services/>
-        <Projects/>
-        <About/>
-        <Contact/>
-      </Layout>
-      
+      <Router>
+          <Switch>
+            <Route exact path="/">
+              <HomePage/>
+            </Route>
+            <Route path="/blogs">
+              <BlogsPage/>
+            </Route>
+            <Route path="/careers">
+              <CareersPage/>
+            </Route>
+          </Switch>
+      </Router>
     );
   }
 }

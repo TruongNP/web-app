@@ -1,5 +1,5 @@
 import React from 'react';
-import { normalizeImgPath } from "../../../utils/imgPath";
+import { normalizeImgPath } from "../../../../utils/imgPath";
 
 
 function About() {
@@ -7,7 +7,7 @@ function About() {
     return (
         <section id="about" className="section">
             <div className="about container">
-            <div className="row">
+            <div className="row m-0">
                 <div className="col-4 d-flex align-items-center justify-content-end">
                     <div className="about-image d-flex justify-content-end align-items-center">
                         <div className="border-overlay"></div>

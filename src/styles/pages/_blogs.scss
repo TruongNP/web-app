@@ -1,0 +1,41 @@
+#blogs-top {
+    transition: 0.3s all;
+    .blogs-top-carousel {
+        overflow: hidden;
+
+        .blogs-top-carousel-item {
+            min-height: 400px;
+        }
+
+        &:hover {
+            .react-multiple-carousel__arrow {
+                opacity: 1;
+            }
+        }
+
+        .react-multiple-carousel__arrow {
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+        }
+    }
+
+    .blogs-top-trend {
+        .blogs-top-trend-item {
+            position: relative;
+            overflow: hidden;
+            height: calc(360px / 3);
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+
+            a {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

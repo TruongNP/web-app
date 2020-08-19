@@ -1,5 +1,5 @@
 import React from 'react';
-import { services } from "../../../static/data/services";
+import { services } from "../../../../static/data/services";
 
 
 function Services() {
@@ -8,7 +8,7 @@ function Services() {
     return (
         <section id="services" className="section mt-5 pt-5">
             <div className="services container">
-            <div className="row">
+            <div className="row  m-0">
                 <div className="col-12 d-flex align-items-center just-content-center">
                     <div className="service-content">
                         <h1 className="text-dark text-uppercase text-center font-weight-normal">{ services.title }</h1>
