@@ -15,7 +15,7 @@ function RightHomeMenu(props) {
     };
     
     return (
-            <div className={ `ml-lg-auto ${ currentPage === 'home' ? '' : 'd-none'  }` }>
+            <div className={ `ml-lg-auto ${ currentPage === 'Home' ? '' : 'd-none'  }` }>
                 <div className="navbar-collapse" id="right-home-menu">
                     <button type="button" id="btn-close-right-home-menu" class="close text-light d-flex align-items-center bg-danger rounded-left h-25 p-1" aria-label="Close">
                         <span aria-hidden="true">&raquo;</span>
