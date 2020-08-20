@@ -1,4 +1,4 @@
-export const cat_list = [
+export const catList = [
   {
     id: 0,
     title: "All",
@@ -25,7 +25,7 @@ export const cat_list = [
   },
 ];
 
-export const tags_list = [
+export const tagsList = [
   {
     id: 0,
     title: "MPV",

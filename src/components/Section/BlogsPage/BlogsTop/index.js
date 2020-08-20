@@ -63,10 +63,12 @@ function BlogsTop() {
                                     dataLeftBlogList.slice(0, 4).map(item => {
                                         return (
                                             <div className="blogs-top-carousel-item ">
-                                                <Link to={`/blogs/${item.slug}`} className="h-100 w-100 text-decoration-none">
+                                                <Link to={`/blog/${item.slug}`} className="d-flex h-100 w-100 text-decoration-none">
                                                     <img src={item.img} className="blog-image w-100 h-100 position-absolute" alt={item.title} />
-                                                    <h6 className="blog-cat lh-md">{item.cat}</h6>
-                                                    <h3 className="blog-title mr-5">{item.title}</h3>
+                                                </Link>
+                                                    <h6 className="blog-cat text-light bg-danger m-0 pl-2 pt-1 pr-2 pb-1">{item.cat}</h6>
+                                                <Link to={`/blog/${item.slug}`} className="h-100 w-100 text-decoration-none">
+                                                    <h3 className="blog-title text-hover m-0 text-light">{item.title}</h3>
                                                 </Link>
                                             </div>
                                         )
@@ -81,10 +83,12 @@ function BlogsTop() {
                             dataRightBlogList.slice(0, 3).map(item => {
                                 return (
                                     <div className="blogs-top-trend-item rounded">
-                                        <Link to={`/blogs/${item.slug}`} className="h-100 w-100 text-decoration-none">
+                                        <Link to={`/blog/${item.slug}`} className="d-flex h-100 w-100 text-decoration-none">
                                             <img src={item.img} className="blog-image w-100 h-100 position-absolute" alt={item.title} />
-                                            <h6 className="blog-cat lh-md">{item.cat}</h6>
-                                            <h3 className="blog-title mr-5">{item.title}</h3>
+                                        </Link>
+                                            <h6 className="blog-cat text-light bg-danger m-0 pl-2 pt-1 pr-2 pb-1">{item.cat}</h6>
+                                        <Link to={`/blog/${item.slug}`} className="h-100 w-100 text-decoration-none">
+                                            <h4 className="blog-title text-hover m-0 text-light">{item.title}</h4>
                                         </Link>
                                     </div>
                                 )
