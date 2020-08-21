@@ -7,8 +7,8 @@ function Pagination(props) {
 
     const PageItem = ({ number }) => {
         let numberPage = number + 1;
-        const pageActive = props.pageActive === numberPage ? 'text-light bg-danger' : '';
-        const disableePageActive = props.pageActive === numberPage ? 'disabled' : '';
+        const pageActive = props.currentPage === numberPage ? 'text-light bg-danger' : '';
+        const disableePageActive = props.currentPage === numberPage ? 'disabled' : '';
 
         return (
           <li className={`page-item m-0 pl-1 pr-1 ${ disableePageActive }`}>
@@ -29,7 +29,7 @@ function Pagination(props) {
             return htmlPageNumber;
         }
         else {
-            const currentPage = props.pageActive;
+            const currentPage = props.currentPage;
             const begin = [1, 2, 3];
             const end = [totalPages, totalPages - 1, totalPages - 2];
 

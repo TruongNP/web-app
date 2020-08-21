@@ -33,3 +33,14 @@ body {
       color: $danger-color !important;
     }
   }
+
+  .react-multi-carousel-dot {
+    button {
+      background: $white-color !important;
+    }
+    &--active {
+      button {
+        border-color: $danger-color !important;
+      }
+    }
+  }

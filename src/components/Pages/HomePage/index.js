@@ -6,6 +6,7 @@ import Services from '../../Section/HomePage/Services';
 import Projects from '../../Section/HomePage/Projects';
 import About from '../../Section/HomePage/About';
 import Contact from '../../Section/HomePage/Contact';
+import Footer from '../../Footer';
 
 class HomePage extends Component {
 
@@ -19,6 +20,7 @@ class HomePage extends Component {
                 <Projects/>
                 <About/>
                 <Contact/>
+                <Footer/>
             </Layout>
         );
     }

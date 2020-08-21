@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { normalizeImgPath } from "../../utils/imgPath";
 import MainMenu from '../MainMenu';
 import RightHomeMenu from '../RightHomeMenu';
+import { Link } from "react-router-dom";
 
 function Header(props) {
   
@@ -31,10 +32,10 @@ function Header(props) {
         <div className="container">
           <div className="row m-0">
             <div className="col-lg-4 col-md-6 col-6 pl-lg-3 pr-lg-3 pl-0 pr-0 d-flex align-items-center">
-              <a href="/" className="logo-link navbar-brand text-light d-flex align-items-center">
+              <Link to="/" className="logo-link navbar-brand text-light d-flex align-items-center">
                 <img src={normalizeImgPath('logo192.png')} alt="logo" width="40" height="auto"/>
                 <h3 className="m-0 ml-1 text-uppercase">My App</h3>
-              </a>
+              </Link>
             </div>
             <div className="col-lg-8 col-md-6 col-6 pl-lg-3 pr-lg-3 pl-0 pr-0">
               <nav className="navbar navbar-expand-lg navbar-dark pl-0 pr-0">
